@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+<nav>
+  <div class="container">
+    <ul>
+      <li> <a href="{% url 'index' %}">BRAND</a></li>
+      <li> <a href="{% url 'admin:index' %}">ADMIN</a></li>
+      <li> <a href="{% url 'basic_app:other' %}">OTHER</a></li>
+    </ul>
+  </div>
+
+  <div class="container">
+    {% block body_block%}
+    <h1>base</h1>
+    {% endblock %}
+  </div>
+</nav>
+  </body>
+</html>

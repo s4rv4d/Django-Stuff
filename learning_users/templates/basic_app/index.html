@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+{% extends "basic_app/base.html" %}
+
+    {% block body_block %}
+    <div class="container">
+        <h1>Django Level Five</h1>
+        <h1>this is index</h1>
+        {% if user.is_authenticated %}
+          <h1>you're logged in</h1>
+        {% else %}
+          <h1>you're logged out</h1>
+        {% endif %}
+    </div>
+    {% endblock %}
