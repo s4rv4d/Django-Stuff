@@ -50,3 +50,7 @@ class SchoolDeleteView(DeleteView):
     model = models.SchoolModel
     context_object_name = 'schools'
     success_url = reverse_lazy("basic_app:list")
+
+class StudentCreateView(CreateView):
+    model = models.StudentModel
+    fields = ('name','age')
